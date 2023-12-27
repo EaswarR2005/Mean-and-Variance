@@ -50,6 +50,7 @@ It shows the distance of a random variable from its mean. It is calcualted as
 # Program :
 Developed By: EASWAR R     
 Registere No: 23012868    
+
 import numpy as np  
 L=[int(1) for i in input().split()]  
 N-len(L); M=max(L)  
