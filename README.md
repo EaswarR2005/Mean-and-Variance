@@ -48,63 +48,38 @@ It shows the distance of a random variable from its mean. It is calcualted as
 ![image](https://user-images.githubusercontent.com/103921593/229993174-5b67e57e-3e01-4ac4-9f83-410a932b22bf.png)
 
 # Program :
-Developed By: EASWAR R
+Developed By: EASWAR R     
+Registere No: 23012868    
+import numpy as np  
+L=[int(1) for i in input().split()]  
+N-len(L); M=max(L)  
+x=list();f=list()    
+for i in range (M+1):    
 
-Registere No: 23012868
+       c=0   
+       for j in range(N):   
+        if L[j]==1:    
+           c=c+1     
+    f.append(c)   
+    x.append(1)   
+sf-np.sum(f)    
+p=list()   
+for i in range(M+1):   
 
-
-import numpy as np
-
-L=[int(1) for i in input().split()]
-
-N-len(L); M=max(L)
-
-x=list();f=list()
-
-for i in range (M+1):
-
-    c=0
-    
-    for j in range(N):
-
-        if L[j]==1:
-        
-           c=c+1
-           
-    f.append(c)
-    
-    x.append(1)
-    
-sf-np.sum(f)
-
-p=list()
-
-for i in range(M+1):
-
-    p.append(f[i]/sf)
-    
-mean=np.inner(x,p)
-
-EX2=np.inner(np.square(x),p)
-
-var-EX2-mean**2
-
-SD=np.sqrt(var)
-
-print("The Mean arrival rate is %.3f "%mean)
-
-print("The Variance of arrival from feeder is %.3f "%var)
-
-print("The Standard deviation of arrival from feeder is %.3F "%SD)
+    p.append(f[i]/sf)        
+mean=np.inner(x,p)      
+EX2=np.inner(np.square(x),p)     
+var-EX2-mean**2      
+SD=np.sqrt(var)     
+print("The Mean arrival rate is %.3f "%mean)      
+print("The Variance of arrival from feeder is %.3f "%var)     
+print("The Standard deviation of arrival from feeder is %.3F "%SD)   
 
 
 # Output : 
-5 0 1 5 2 3 7 5 3 5 5 7 7 2 3 3 5 3 6 1
-
-The Mean arrival rate is 3.900
-
-The Variance of arrival from feeder is 4.190
-
+5 0 1 5 2 3 7 5 3 5 5 7 7 2 3 3 5 3 6 1  
+The Mean arrival rate is 3.900  
+The Variance of arrival from feeder is 4.190  
 The Standard deviation of arrival from feeder is 2.047
 
 # Results :
